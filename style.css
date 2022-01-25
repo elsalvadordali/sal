@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  flex-flow: row wrap;
+}
+aside {
+  width: 180px;
+  border-right: 2px solid black;
+  height: 99vh;
+}
+#main {
+  width: calc(100% - 190px);
+}
+#main article {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px dotted black;
+}
+#main div {
+  border: 1px dotted black;
+}
+
+.color {
+  height: 40px;
+  width: 40px;
+  margin: 6px;
+  border-radius: 6px;
+}

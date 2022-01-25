@@ -5,6 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SAV: Sorting algorithm visualizer</title>
+    <script src="./util.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <aside>
+      <h5>Number of divs</h5>
+      <input type="number" id="num" min="2" max="99" placeholder="12" />
+      <h5>Sorting algorithm</h5>
+      <div><input type="checkbox" id="insert-sort" />Insert Sort</div>
+      <div><input type="checkbox" id="bubble-sort" /> Bubble sort</div>
+      <div><input type="checkbox" id="merge-sort" /> Merge Sort</div>
+      <div><input type="checkbox" id="quick-sort" /><s> QuickSort</s></div>
+      <h5>Go</h5>
+      <div class="speed-settings">
+        <button onClick="slow()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#000000"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M11 18V6l-8.5 6 8.5 6zm.5-6l8.5 6V6l-8.5 6z" />
+          </svg>
+        </button>
+        <button onClick="play()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#000000"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </button>
+        <button onClick="pause()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#000000"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+          </svg>
+        </button>
+        <button onClick="speedUp()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#000000"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z" />
+          </svg>
+        </button>
+      </div>
+    </aside>
+    <div id="main"></div>
+  </body>
 </html>
